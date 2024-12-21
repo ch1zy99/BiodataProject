@@ -1,0 +1,83 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('bgabout.jpeg');
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    text-align: flex;
+    overflow-x: hidden;
+    font-size: 0.9em; /* Ukuran font default lebih kecil */
+}
+
+main {
+    max-width: 600px; /* Mengurangi lebar maksimum untuk grid */
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Mengubah menjadi kolom untuk tampilan yang lebih kompak */
+    gap: 10px; /* Mengurangi jarak antar elemen */
+}
+
+.header, .footer {
+    display: flex; /* Menggunakan flexbox untuk header dan footer */
+    justify-content: center; /* Mengatur konten agar berada di tengah */
+    align-items: center; /* Mengatur konten agar berada di tengah secara vertikal */
+    max-width: 600px; /* Mengatur lebar maksimum agar sama dengan main */
+    margin: 0 auto; /* Memusatkan elemen */
+    background-color: #fff; /* Warna latar belakang putih */
+    border-radius: 16px;
+    padding: 20px; /* Menambahkan padding untuk ruang di dalam header/footer */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk efek kedalaman */
+}
+
+.header h2, .footer p {
+    margin: 0; /* Menghapus margin default */
+}
+
+.header h2 {
+    font-size: 2em; /* Ukuran font yang lebih besar untuk judul */
+    color: #333; /* Warna teks yang lebih gelap untuk kontras */
+}
+
+.card {
+    padding: 15px; /* Mengurangi padding dalam card */
+    background-color: white; /* Menambahkan warna latar belakang putih */
+    border-radius: 10px; /* Menambahkan sudut melengkung (opsional) */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan (opsional) */
+}
+
+.card h2 {
+    text-align: center; /* Menyelaraskan teks judul ke tengah */
+}
+
+h2 {
+    font-size: 1.5em; /* Ukuran font h2 lebih kecil */
+}
+
+p, ul {
+    font-size: 0.9em; /* Ukuran font paragraf dan list lebih kecil */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .header h2 {
+        font-size: 1.8em; /* Ukuran font judul untuk layar kecil */
+    }
+
+    h2 {
+        font-size: 1.8em; /* Ukuran font h2 untuk layar kecil */
+    }
+
+    p, ul {
+        font-size: 1.8em; /* Ukuran font paragraf dan list untuk layar kecil */
+    }
+}
+
+.footer {
+    height: 65px; /* Atur tinggi footer */
+    color: #606060;
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px; /* Menambahkan padding untuk footer */
+}
